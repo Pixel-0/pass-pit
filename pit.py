@@ -1,3 +1,6 @@
+from random import *
+import string
+
 class Credential:
     """
     Class that generates new instances of account credentials.
@@ -47,8 +50,8 @@ class User:
 
     @classmethod
     def display_credentials(cls,credential_list):
-        for c in credential_list:
-            return (c.platform,c.first_name,c.last_name,c.username,c.email,c.password)
+        for cred in credential_list:
+            return (cred.platform,cred.first_name,cred.last_name,cred.username,cred.email,cred.password)
 
 
     @classmethod
@@ -56,7 +59,10 @@ class User:
         '''
         be able to delete a credential
         '''
-        for c in credential_list:
-            if name == c.platform:
-                credential_list.remove(c)
+        for cred in credential_list:
+            if name == cred.platform:
+                credential_list.remove(cred)
         return credential_list
+
+
+
