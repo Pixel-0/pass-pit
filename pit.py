@@ -53,7 +53,6 @@ class User:
         for cred in credential_list:
             return (cred.platform,cred.first_name,cred.last_name,cred.username,cred.email,cred.password)
 
-
     @classmethod
     def del_credential(cls,name,credential_list):
         '''
