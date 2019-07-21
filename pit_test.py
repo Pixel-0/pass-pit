@@ -16,7 +16,7 @@ class TestUser(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_credential = Credential("Facebook","Beyonce","Knowles","@beybey","bknowles@carter.com","#####")
+        self.new_credential = Credential("Instagram","Pixel","Aurry","@pixel","pixel@live.com","#####")
     
     def tearDown(self):
             '''
