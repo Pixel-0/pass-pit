@@ -1,8 +1,7 @@
 import unittest
 from random import *
 import string
-from pit import User
-from pit import Credential
+from pit import User, Credential
 
 class TestUser(unittest.TestCase):
 
