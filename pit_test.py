@@ -82,6 +82,16 @@ class TestUser(unittest.TestCase):
         User.save_credential(instagram_credential,user_credential_list)
         self.assertEqual(len(user_credential_list),1)
 
+    def test_delete_credentials(self):
+        '''
+        test_display_credential test case to test if all credentials will be returned
+        '''
+        instagram_credential = User.create_credential("instagram","Pixel","Aurry","@tello","pixel@live.com","password")
+        user_credential_list = []
+        User.save_credential(instagram_credential,user_credential_list)
+        new_list = User.del_credential("instagram",user_credential_list)
+        self.assertEqual(len(new_list),0)
+
 
 
 if __name__ == '__main__':
