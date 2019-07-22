@@ -243,8 +243,6 @@ else:
                         password = input()
                         authentication = authenticate_user(currentuser,username,password)
 
-                        
-
                                 elif shortcode == "":
                                     print("Enter a valid input")
 
