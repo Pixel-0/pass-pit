@@ -18,14 +18,14 @@ pass-pit is an application that will help users manage their passwords from thei
 | User gets to add credentials                | The account is adde after they key in their detail  |
 | 			                                  | 			                                        | 		
 
-##Setup and unit test
+## Setup and unit test
 - git clone https://github.com/Pixel-0/pass-pit.git
 - cd pass-pit
 - open in terminal
 - run python3.6 pit_test.py
 Four unit tests will run successfully 
 
-##Technologies used
+## Technologies used
 - Python3.6
 
 ## For help
