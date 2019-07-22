@@ -63,3 +63,26 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.username,"@tello")
         self.assertEqual(self.new_user.email,"pixel@live.com")
         self.assertEqual(self.new_user.password,"#####")
+
+
+    def test_create_credential(self):
+        '''
+        test_create_credential allows user to update a new credential
+        '''
+        instagram_credential = User.create_credential("instagram","Pixel","Aurry","@tello","pixel@live.com","password")
+        self.assertTrue(instagram_credential)
+
+    def test_save_credential(self):
+        '''
+        test_save_credentials test case to test if the credential object is saved into
+         the credential list
+        '''
+        instagram_credential = User.create_credential("instagram","Pixel","Aurry","@tello","pixel@live.com","password")
+        user_credential_list = []
+        User.save_credential(instagram_credential,user_credential_list)
+        self.assertEqual(len(user_credential_list),1)
+
+
+
+if __name__ == '__main__':
+    unittest.main()
