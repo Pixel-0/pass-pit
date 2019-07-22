@@ -23,9 +23,8 @@ pass-pit is an application that will help users manage their passwords from thei
 - cd pass-pit
 - open in terminal
 - run python3.6 user_test.py
-Four unit tests will run successfully 
-![lock](Screenshot from 2019-07-22 12-21-19.png)
-
+ (Four unit tests will run successfully)
+![ScreenShot](https://github.com/Pixel-0/pass-pit/blob/master/Screenshot%20from%202019-07-22%2012-21-19.png)
 ## Technologies used
 - Python3.6
 
