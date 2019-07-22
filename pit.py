@@ -1,5 +1,8 @@
 from random import *
 import string
+max_char = 8
+password = "".join(choice(string.ascii_letters) for x in range(randint(8, max_char)))
+print ("Your password is: ",password)
 
 class Credential:
     """
